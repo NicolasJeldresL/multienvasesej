@@ -1,0 +1,157 @@
+:root {
+    --lightBlue: #E6EBF1;
+    --iconColor: #586672;
+    --white: #FFFFFF;
+    --orange: #E08747;
+    --black: #333333;
+    --dark: #111111;
+    --lowWhite: #A0A0A0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {font-size: 4rem;}
+
+h2 {font-size: 2.125;}
+
+h3 {font-size: 1.5rem;}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+ul {list-style: none;}
+
+a{text-decoration: none;}
+
+header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.3), rgba(4,9,30,0.3)), url(media/binshero.jpg);
+    background-position: top;
+    background-size: cover;
+    position: relative;
+}
+
+header p {
+    color: #6E7F8D;
+    background-color: var(--lightBlue);
+    background-size: 10vh;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: left;
+    padding: 10px 6%;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    display: inline-block;
+    padding: 8px 40px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    font-family: 'Oswald', 'sans-serif';
+    color: var(--lowWhite);
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.nav-links ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0%;
+    height: 5px;
+    background: var(--orange);
+    margin: auto;
+    transform: scaleX(0);
+    transition: transform 0.3s linear;
+}
+
+.nav-links ul li a:hover {
+    color: var(--white);
+}
+
+.nav-links ul li a:hover::after {
+    transform: scaleX(1);
+    width: 100%;
+}
+
+.boton-ver {
+    width: 15%;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.boton-ver h2 {
+    font-family: 'Oswald', 'sans-serif';
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 0.4px;
+    color: var(--white);
+    opacity: 80%;
+}
+
+.hero-btn {
+    display: inline-block;
+    padding: 10px 50px;
+    background: var(--orange);
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn :hover {
+    opacity: 100%;
+}
+
+@media (max-width: 720px) {
+    .nav-links ul li {
+        flex-direction: block;
+    }
+    .nav-links {
+        position: absolute;
+        background: var(--white);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: center;
+        z-index: 1;
+    }
+}
