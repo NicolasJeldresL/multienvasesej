@@ -5,30 +5,235 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>multienvases</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/2c30cdf1bb.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et erat suscipit, feugiat lorem eget, vehicula metus. Donec ligula urna</p>
-        <div class="icons-header">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+        <div class="info-etiqueta">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et erat suscipit, feugiat lorem eget, vehicula metus. Donec ligula urna </p>
+        <div class="dropdown" >
+            <button class="dropbtn"><i class="fa-sharp fa-solid fa-phone"></i></button>
+            <div class="dropdown-content">
+            <a href="">Fonos 56-02 824 49 11 <br>Fax 56-02 825 13 21</a>
+            </div>
+            </div>
+        <!-- <i class="fa-sharp fa-solid fa-phone"></i>
+        <p class="info-contacto">Fonos 56-02 824 49 11 - -Fax 56-02 825 13 21</p> -->
         </div>
+        
         <nav>
             <a href="index.html"><img src="media/logomultienvases.png" alt="logo multienvases"></a>
+            <input type="checkbox" id="check">
             <div class="nav-links">
                 <ul>
                     <li><a href="#">INICIO</a></li>
-                    <li><a href="#">NOSOTROS</a></li>
-                    <li><a href="#">PRODUCTOS</a></li>
+                    <li><a href="#nuestro-equipo">NOSOTROS</a></li>
+                    <li><a href="#nuestro-servicio">SERVICIOS</a></li>
                     <li><a href="#">CONTACTO</a></li>
+                    <a class="phone" href="">Fonos 56-02 824 49 11 <br>Fax 56-02 825 13 21</a>
+                    <label for="check" class="cerrar-menu">
+                        <i class="fa-sharp fa-solid fa-xmark"></i>
+                    </label>
                 </ul>
             </div>
+            <label for="check" class="abrir-menu">
+                <!-- <i class="fa-sharp fa-solid fa-bars"></i> -->
+                <img src="assets/barsmulti.svg" alt="">
+            </label>
         </nav>
             <div class="boton-ver">
-                <a href="" class="hero-btn"><h2>VER PRODUCTOS</h2></a>
+                <a href="#nuestros-productos" class="hero-btn"><h2>VER PRODUCTOS</h2></a>
             </div>
     </header>
+    <!-- Fin Header -->
+    <!-- Equipo de Trabajo -->
     
+    <div id="nuestro-equipo" class="titulo-equipo"><h2>NUESTRO EQUIPO DE TRABAJO</h2>
+    </div>
+    <section class="nuestro-equipo">
+        <img src="media/rectangulolat.png" alt="" class="rectangulo">
+        <div class="container-equipo">
+            <div class="card">
+                <div class="imgBx">
+                    <img src="media/apicolon.png" alt="">
+                </div>
+                <div class="content-card">
+                    <h3>Natali Acevedo</h3>
+                    <p class="texto-equipo">Encargada Planta Paine y de la relación diaria con cada cliente coordinando la logística que implica el despacho y recepción de los envases. </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="media/apicolon.png" alt="">
+                </div>
+                <div class="content-card">
+                    <h3>Cristian Irarrázaval</h3>
+                    <p class="texto-equipo">Encargado de la administración general de la empresa con basto conocimiento en estas labores  </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="media/apicolon.png" alt="">
+                </div>
+                <div class="content-card">
+                    <h3>Sebastián Irarrázaval</h3>
+                    <p class="texto-equipo">Encargado de los negocios con clientes, ver sus necesidades en las distintas épocas de cosechas y procesos, para poder abastecer oportunamente Equipo de planta </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="media/apicolon.png" alt="">
+                </div>
+                <div class="content-card">
+                    <h3>Multienvases paine</h3>
+                    <p class="texto-equipo">Compuesto por operadores de Grúas para carga y descarga de camiones diariamente, equipo de lavado y reparado de envases, labor que se realiza a diario en Planta Paine </p>
+                </div>
+            </div>
+        </div>
+           
+    </section>
+    <!-- Fin Equipo de trabajo -->
+    <!-- Servicios -->
+    
+    <div id="nuestro-servicio" class="container-serv"><h2>SERVICIOS</h2></div>
+    <section  class="nuestros-servicios">
+        <div class="servicios">
+        <div class="column-serv-uno">
+          <div class="content-serv">
+            <!-- <i class="fa-sharp fa-solid fa-users"></i> -->
+            <img src="assets/asesorr.svg" alt="">
+            <h3>ASESORÍA</h3>
+            <p></p>
+          </div>
+        </div>
+        <div class="column-serv-dos">
+          <div class="content-serv">
+            <!-- <i class="fa-sharp fa-solid fa-basket-shopping"></i> -->
+            <img src="assets/transportee.svg" alt="">
+            <h3>TRANSPORTE</h3>
+            <p></p>
+          </div>
+        </div>
+        <div class="column-serv-tres">
+          <div class="content-serv">
+            <!-- <i class="fa-sharp fa-solid fa-truck-fast"></i> -->
+            <img src="assets/despachoo.svg" alt="">
+            <h3>DESPACHO</h3>
+            <p></p>
+          </div>
+        </div>
+        <div class="column-serv-cuatro">
+          <div class="content-serv">
+            <!-- <i class="fa-sharp fa-solid fa-repeat"></i> -->
+            <img src="assets/reposic.svg" alt="">
+            <h3>REPOSICIÓN</h3>
+            <p></p>
+          </div>
+        </div>
+    </section>
+    <div class="container-imgServ">
+        <!-- <img src="media/binej.png" alt=""> -->
+        <div class="contenedor-acordeon">
+            <div class="acordeon-sv">
+                <input type="checkbox" name="acordeon-sv"      id="btn-acordeon" class="btn-acordeon">
+                <label for="btn-acordeon">
+                <h3>DESCRIPCIÓN SERVICIOS</h3><i class="fa-sharp fa-solid fa-chevron-down"></i></label>
+                <div class="contenido-ac">  
+                <p>Arriendo de envases plásticos bins para todos los procesos productivos, de cosecha, traslado , frío para las diferentes variedades de frutas, cerezas, carozos, manzanas, peras, kiwis, cítricos, paltas. Así también guarda de alimentos terminados y almacenaje en general.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Fin Servicios -->
+    <!-- Nuestros Productos -->
+    <section id="nuestros-productos">
+        <div class="titulo-prod">
+            <h2>NUESTROS PRODUCTOS</h2>
+        </div>
+        <div class="wrapper">
+            <i id="left" class="fa-sharp fa-solid fa-chevron-left"></i>
+            <div class="carousel">
+                <div class="img-area">
+                    
+                <img src="media/imgej1.png" class="" id="img1" alt="" style="max-width:350px">
+                <img src="media/imgej2.png" class="zoom" id="img2" alt=""
+                style="max-width:350px">
+                <img src="media/imgej3.png" class="zoom" id="img3" alt=""
+                style="max-width:350px">
+                <img src="media/imgej1.png" class="zoom" id="img4" alt=""
+                style="max-width:350px">
+                <img src="media/imgej2.png" class="zoom" id="img5" alt=""
+                style="max-width:350px">
+                <img src="media/imgej3.png" class="zoom" id="img6" alt=""
+                style="max-width:350px">
+                </div> 
+                
+            </div>
+            <i id="right" class="fa-sharp fa-solid fa-chevron-right"></i>
+            
+        </div>
+        
+    <!-- Descripciones -->
+        <div class="caracteristicas">
+            <h2>CARACTERÍSTICAS</h2>
+        </div>
+        <div class="desplegable">
+            <button class="desplinks" onclick="abrirDesc(event, 'abrir')"><i class="fa-sharp fa-solid fa-chevron-down" id="desc-btn"></i>
+        </div>
+          
+        <div id="abrir" class="content-info">
+            <span onclick="this.parentElement.style.display='none'" class="topleft">&times</span>
+            <div class="container-desc">
+                <div class="desc">
+                <p>BINS AGRÍCOLA
+                    <br>
+                    Descripción
+                    <br>
+                    Nombre: 
+                    <br>
+                    Dimensiones:
+                    <br>
+                    Dimensión exterior
+                </p>
+                </div>
+                <div class="desc">
+                <p>BINS AGRÍCOLA
+                    <br>
+                    Descripción
+                    <br>
+                    Nombre: 
+                    <br>
+                    Dimensiones:
+                    <br>
+                    Dimensión exterior
+                </p>
+                </div>
+                <div class="desc">
+                <p>BINS AGRÍCOLA
+                    <br>
+                    Descripción
+                    <br>
+                    Nombre: 
+                    <br>
+                    Dimensiones:
+                    <br>
+                    Dimensión exterior
+                </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fin Nuestros Productos -->  
+    <!-- Como llegar -->      
+    <!-- Fin Como llegar -->
+    <section class="ubicacion">
+        <h2>COMO LLEGAR</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8848.34833384329!2d-70.77461337029511!3d-33.82816292706969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9663234b038eb131%3A0xf3ce138f89a8bf32!2sLas%20Colonias%20de%20paine%20Parcela%20N%C2%B025!5e0!3m2!1ses!2scl!4v1691186563656!5m2!1ses!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    
+    <script src="main.js"></script>
 </body>
 </html>
